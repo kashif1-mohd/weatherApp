@@ -60,6 +60,9 @@ function clearSearch() {
   document.getElementById("search-city").value = "";
   document.getElementById("search-state").value = "";
   document.getElementById("search-country").value = "";
+  const displayDiv = document.querySelector(".display-div");
+  displayDiv.style.display = "none";
+  const img = document.querySelector("img");
   img.style.display = "none";
   clearDOM();
 }
